@@ -1,0 +1,15 @@
+
+<p>Select Langauge :
+  <select  (click)="selectLang($event)">
+    <option *ngFor="let lang of supportLanguage">{{lang}}</option>
+  </select>
+</p>
+
+<hr>
+
+
+<p>{{'home.title' | translate}}</p>
+
+
+
+<router-outlet></router-outlet>
